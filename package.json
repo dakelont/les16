@@ -1,0 +1,22 @@
+{
+  "name": "les16",
+  "version": "1.0.0",
+  "description": "5.1 «Тестируем сервер, используя Mocha»",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "mocha-sinon": "^2.0.0",
+    "sinon": "^4.1.2",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    
+  }
+}
