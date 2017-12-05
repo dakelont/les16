@@ -7,7 +7,7 @@ require('mocha-sinon');
 const sepertest = require('supertest');
 
 describe('Класс Pokemon метод show()', function () {
-    before(function() {
+    beforeEach(function() {
         let log = console.log;
         this.sinon.stub(console, 'log').callsFake(function() {
             return log.apply(log, arguments);
@@ -43,7 +43,7 @@ describe('Класс Pokemon метод show()', function () {
 describe('Класс Pokemonlist', function () {
     let list;
     
-    before(function() {
+    beforeEach(function() {
         list = new Pokemonlist(new Pokemon("Item0", 0), new Pokemon("Item1", 1));
 
         let log = console.log;
@@ -94,7 +94,7 @@ describe('Класс Pokemonlist', function () {
     })
 });
 
-describe.only('REST API', () => {
+describe('REST API', () => {
     let server;
 
     before((done) => {
